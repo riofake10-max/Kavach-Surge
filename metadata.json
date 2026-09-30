@@ -1,0 +1,6 @@
+{
+  "name": "KAVACH-Surge",
+  "description": "AI-powered predictive risk and vulnerability modeling platform for cyclones in the Bay of Bengal, enabling pre-landfall action: evacuation planning, infrastructure hardening, and automated early warning dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

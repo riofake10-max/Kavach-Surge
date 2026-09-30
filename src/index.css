@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Leaflet Container & Dark Mode Overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background-color: #020617 !important;
+  font-family: inherit;
+}
+
+/* Custom Leaflet Dark Popup */
+.dark-popup .leaflet-popup-content-wrapper {
+  background-color: #090d16 !important;
+  color: #f1f5f9 !important;
+  border: 1px solid #334155 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.7) !important;
+  padding: 4px !important;
+}
+
+.dark-popup .leaflet-popup-tip {
+  background-color: #090d16 !important;
+  border: 1px solid #334155 !important;
+}
+
+.dark-popup .leaflet-popup-close-button {
+  color: #94a3b8 !important;
+  padding: 4px !important;
+}
+
+/* Custom Scrollbar for Command Centre Panels */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Print Stylesheet for Executive SitRep */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, aside, footer, .leaflet-container, .leaflet-control-container, #print-hidden {
+    display: none !important;
+  }
+}
